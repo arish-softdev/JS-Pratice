@@ -4,13 +4,13 @@ function updateProduct(e) {
   fetch("https://jsonplaceholder.typicode.com/posts/1", {
     method: "PUT",
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      title: document.getElementById("product").value
-    })
+      title: document.getElementById("product").value,
+    }),
   })
-  .then(res => res.json())
-  .then(data => alert("Updated Successfully"))
-  .catch(err => console.log(err));
+    .then((res) => res.json())
+    .then((data) => alert("Updated Successfully"))
+    .catch((err) => console.log(err));
 }
