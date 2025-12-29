@@ -32,7 +32,7 @@ input {
 }
 
 .btn:hover {
-    color: #dfe4ea;
-    background-color: transparent;
+    color: #eb3b5a;
+    background-color: #dfe4ea;
     font-weight: 500;
 }
