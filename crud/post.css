@@ -15,7 +15,18 @@ body {
 
 }
 
-input, button {
+input {
     padding: 10px;
     margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn {
+    padding: 10px;
+    margin: 5px;
+    color: #ffffff;
+    background-color: #eb3b5a;
+    border: 1px solid #dfe4ea;
+    border-radius: 5px;
 }
