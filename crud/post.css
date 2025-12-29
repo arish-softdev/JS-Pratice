@@ -30,3 +30,9 @@ input {
     border: 1px solid #dfe4ea;
     border-radius: 5px;
 }
+
+.btn:hover {
+    color: #dfe4ea;
+    background-color: transparent;
+    font-weight: 500;
+}
