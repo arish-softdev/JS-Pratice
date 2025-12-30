@@ -28,3 +28,9 @@ button {
   border: 1px solid #dfe4ea;
   border-radius: 5px;
 }
+
+button:hover {
+  color: #000000;
+  background-color: snow;
+  font-weight: 500;
+}
