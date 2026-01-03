@@ -1,17 +1,17 @@
-   const btn = document.querySelector("#btn");
+const btn = document.querySelector("#btn");
 const div = document.querySelector("#fetchdiv");
 
 btn.addEventListener("click", fetchfun);
 
 async function fetchfun() {
-    const fetchdata = await fetch("https://dummyjson.com/carts");
-    const convert = await fetchdata.json();
+  const fetchdata = await fetch("https://dummyjson.com/carts");
+  const convert = await fetchdata.json();
 
-    let outputfetch = "";
+  let outputfetch = "";
 
-    convert.carts.forEach((cart) => {
-        cart.products.forEach((item) => {
-            outputfetch += `
+  convert.carts.forEach((cart) => {
+    cart.products.forEach((item) => {
+      outputfetch += `
             <div class="cart">
                 <h2>${item.title}</h2>
                 <p>Price: ${item.price}</p>
@@ -19,8 +19,8 @@ async function fetchfun() {
                 <p>Total: ${item.total}</p>
             </div>
             `;
-        });
     });
+  });
 
-    div.innerHTML = outputfetch;
+  div.innerHTML = outputfetch;
 }
