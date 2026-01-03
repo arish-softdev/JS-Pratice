@@ -1,3 +1,4 @@
+// Fetch in js 
 const btn = document.querySelector("#btn");
 const div = document.querySelector("#fetchdiv");
 
